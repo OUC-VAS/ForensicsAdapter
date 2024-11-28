@@ -1,5 +1,5 @@
 # log dir 
-log_dir: /data/cuixinjie/FA/logs/new
+log_dir: /data/cuixinjie/FA/logs/
 #log_dir: /data/cuixinjie/DsClip_V2/log
 lmdb: False
 mode: train
@@ -38,7 +38,7 @@ test_dataset: [FaceForensics++]
 dataset_json_folder: '/data/cuixinjie/dataset/dataset_json'
 
 compression: c23  # compression-level for videos
-train_batchSize: 20   # training batch size
+train_batchSize: 16   # training batch size
 test_batchSize: 128   # test batch size
 workers: 8   # number of data loading workers
 frame_num: {'train': 32, 'test': 32}   # number of frames to use per video in training and testing
@@ -122,7 +122,7 @@ start_epoch: 0    # manual epoch number (useful for restarts)
 save_epoch: 2   # interval epochs for saving models
 rec_iter: 100   # interval iterations for recording
 #logdir: /media/ouc/新加卷/DS_CLIP_V2/log  # folder to output images and logs
-logdir: /data/cuixinjie/FA/log/Ablation  # folder to output images and logs
+logdir: /data/cuixinjie/FA/log/  # folder to output images and logs
 
 
 manualSeed: 1020   # manual seed for random number generation

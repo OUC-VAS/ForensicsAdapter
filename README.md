@@ -5,4 +5,4 @@
 
 [pre-trained weights](XXXXX)
 
-![pipeline](https://github.com/OUC-VAS/ForensicsAdapter/figures/structure.png)
+![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/structure.png)

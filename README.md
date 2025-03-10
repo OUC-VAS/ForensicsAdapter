@@ -23,13 +23,13 @@
 | ED          | AAAI'24    | 0.818   | 0.864   | 0.721 | 0.851  | -    | -     |
 | LSDA      | CVPR'24    | 0.867   | 0.830   | 0.736 | 0.815  | 0.880| 0.826 |
 | CFM        | TIFS'24    | -       | 0.828   | -     | 0.758  | 0.915| -     |
-| **Ours**       | **CVPR'25**      | 🏆 **0.914** | 🏆 **0.900** | 🏆 **0.843** | 🏆 **0.890** | 🏆 **0.933** | 🏆 **0.896** |
+| **Ours**       | **CVPR'25**      | 🥇 **0.914** | 🥇 **0.900** | 🥇 **0.843** | 🥇 **0.890** | 🥇 **0.933** | 🥇 **0.896** |
 
 ## 🎥 Video-Level Comparison
 
 🏆 **Champion Method Alert**: Our approach achieves new SOTA performance across all video-level benchmarks!
 
-| Method             | Venue      | CDF-v2 🏅 | DFDC 🌐 | DFDCP 🌐 |
+| Method             | Venue      | CDF-v2  | DFDC  | DFDCP  |
 |--------------------|------------|---------|-------|--------|
 | TALL          | ICCV'23    | 0.908   | 0.768 | -      |
 | AltFreezing    | CVPR'23    | 0.895   | -     | -      |

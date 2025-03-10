@@ -54,7 +54,7 @@
 - [🏋️ Training](#training)
 - [🧪 Testing](#testing)
 
-## Environment Setup
+## ⚙️ Environment Setup 
 Ensure your environment meets the following requirements:
 
 - 🐍 Python 3.7
@@ -69,7 +69,7 @@ conda activate FA
 sh install.sh
 ```
 
-## Dataset
+## 📂 Dataset
 
 We use multiple datasets for training and evaluation:
 
@@ -81,7 +81,7 @@ We use multiple datasets for training and evaluation:
 
 Follow the official guidelines to download and preprocess the data.
 
-## Training
+## 🏋️ Training
 
 Start training with the following command:
 
@@ -89,11 +89,11 @@ Start training with the following command:
 python train.py 
 ```
 
-## Testing
+## 🧪 Testing
 
-Run the following command to test the model:
+To test the model, you can directly load our pre-trained weights and run the following command:
 
 ```bash
-python test.py 
+python /data/cuixinjie/FA/test.py --weights_path /data/cuixinjie/weights/ckpt_best.pth
 ```
 

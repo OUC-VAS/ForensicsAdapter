@@ -4,3 +4,5 @@
 [paper](https://arxiv.org/abs/2411.19715)
 
 [pre-trained weights](XXXXX)
+
+![pipeline](https://github.com/OUC-VAS/ForensicsAdapter/figures/structure.png)

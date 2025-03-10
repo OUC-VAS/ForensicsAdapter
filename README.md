@@ -1,25 +1,21 @@
 # Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection (CVPR 2025)
+**👥 Authors: Xinjie Cui, Yuezun Li, Ao Luo, Jiaran Zhou, Junyu Dong**
 
-**Authors: Xinjie Cui, Yuezun Li, Ao Luo, Jiaran Zhou, Junyu Dong**
+📄 [Paper](https://arxiv.org/abs/2411.19715) | ⚖️ [Pre-trained Weights](XXXXX)
 
-[paper](https://arxiv.org/abs/2411.19715)
+## 🚀 Start
 
-[pre-trained weights](XXXXX)
-
-## Start
-
-- [Environment Setup](#environment-setup)
-- [Dataset](#dataset)
-- [Training](#training)
-- [Testing](#testing)
+- [⚙️ Environment Setup](#environment-setup)
+- [📂 Dataset](#dataset)
+- [🏋️ Training](#training)
+- [🧪 Testing](#testing)
 
 ## Environment Setup
-
 Ensure your environment meets the following requirements:
 
-- Python 3.7
-- PyTorch 1.11
-- CUDA 11.3
+- 🐍 Python 3.7
+- 🔥 PyTorch 1.11
+- 🚀 CUDA 11.3
 
 Install dependencies:
 

@@ -4,7 +4,7 @@
 
 
 
-![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/structure.png)
+![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/archi.png)
 
 
 ---
@@ -117,9 +117,9 @@ python /data/cuixinjie/FA/test.py
 If our work is useful for your research, please cite it as follows:
 
 ```bibtex
-@article{cui2024forensics,
-  title={Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection},
+@InProceedings{Cui_2025_CVPR,
   author={Cui, Xinjie and Li, Yuezun and Luo, Ao and Zhou, Jiaran and Dong, Junyu},
-  journal={arXiv preprint arXiv:2411.19715},
-  year={2024}
+  title={Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2025}
 }

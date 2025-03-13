@@ -10,7 +10,7 @@ task_target: " "
 save_avg: True
 #queue_size: 2048
 #random_k: 256
-loss_rate: "10 * loss1 +  200 * loss_mse + 20* loss_intra + 10 *loss_inter  13clipintra_r_f + 456adapterintra intra_x*0.05+ x out8 xray=xray+mask_xray  "
+loss_rate: "10 * loss1 +  200 * loss_mse + 20* loss_intra + 10 *loss_inter"
 vit_name: 'vit_tiny_patch16_224'
 train_set: 'ori'
 num_quires: 128

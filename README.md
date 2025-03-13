@@ -1,14 +1,24 @@
 # Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection (CVPR 2025)
 **👥 Authors: Xinjie Cui, [Yuezun Li](https://yuezunli.github.io/) (corresponding author), Ao Luo, Jiaran Zhou, Junyu Dong**
 
-📄 [Paper](https://arxiv.org/abs/2411.19715) | ⚖️ [Pre-trained Weights](https://drive.google.com/file/d/1UlaAUTtsX87ofIibf38TtfAKIsnA7WVm/view?usp=sharing)
+
+
 
 ![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/structure.png)
 
 
+---
 
-## 📊 Benchmark Comparison
+## 📚 Resources  
+| **Section**       | **Content**                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| 📄 **Paper**       | [arXiv Preprint](https://arxiv.org/abs/2411.19715)                       |
+| ⚖️ **Model Weights** | [Google Drive](https://drive.google.com/file/d/1UlaAUTtsX87ofIibf38TtfAKIsnA7WVm/view?usp=sharing)  \| [Baidu Netdisk](https://pan.baidu.com/s/1md8NI4MwtPVDWPji-XfkNg?pwd=inye) |
 
+---
+
+
+## 📊 Benchmark Comparison  
 ## 🖼️ Frame-Level Comparison 
 🏆 **Champion Method Alert**: Our approach establishes new state-of-the-art on all frame-level benchmarks!
 

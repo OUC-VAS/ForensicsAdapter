@@ -49,7 +49,7 @@
 
 ## 🚀 Start
 
-- [⚙️ Environment Setup](#-environment-setup)
+- [⚙️ Environment Setup](#environment-setup)
 - [📂 Dataset](#dataset)
 - [🏋️ Training](#training)
 - [🧪 Testing](#testing)

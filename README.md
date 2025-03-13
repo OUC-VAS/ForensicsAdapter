@@ -49,8 +49,8 @@
 
 ## 🚀 Start
 
-- [⚙️ Environment Setup](#environment-setup)
-- [📂 Dataset](#dataset)
+- [⚙️ Environment Setup](#-environment-setup)
+- [📂 Dataset](#-dataset)
 - [🏋️ Training](#training)
 - [🧪 Testing](#testing)
 - [📝 Citation](#citation)

@@ -66,6 +66,8 @@ Ensure your environment meets the following requirements:
 Install dependencies:
 
 ```bash
+git clone https://github.com/OUC-VAS/ForensicsAdapter.git
+cd ForensicsAdapter
 conda create -n FA python=3.7.2
 conda activate FA
 sh install.sh

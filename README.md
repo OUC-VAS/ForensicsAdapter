@@ -101,13 +101,12 @@ python /data/cuixinjie/FA/test.py --weights_path /data/cuixinjie/weights/ckpt_be
 ```
 ## 📝 Citation
 
-```bash
+If our work is useful for your research, please cite it as follows:
+
+```bibtex
 @article{cui2024forensics,
   title={Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection},
   author={Cui, Xinjie and Li, Yuezun and Luo, Ao and Zhou, Jiaran and Dong, Junyu},
   journal={arXiv preprint arXiv:2411.19715},
   year={2024}
 }
-
-```
-

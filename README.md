@@ -1,7 +1,7 @@
 # Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection (CVPR 2025)
 **👥 Authors: Xinjie Cui, [Yuezun Li](https://yuezunli.github.io/) (corresponding author), Ao Luo, Jiaran Zhou, Junyu Dong**
 
-📄 [Paper](https://arxiv.org/abs/2411.19715) | ⚖️ [Pre-trained Weights](XXXXX)
+📄 [Paper](https://arxiv.org/abs/2411.19715) | ⚖️ [Pre-trained Weights](https://drive.google.com/file/d/1UlaAUTtsX87ofIibf38TtfAKIsnA7WVm/view?usp=sharing)
 
 ![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/structure.png)
 

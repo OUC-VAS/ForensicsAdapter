@@ -53,7 +53,6 @@
 - [📂 Dataset](#dataset)
 - [🏋️ Training](#training)
 - [🧪 Testing](#testing)
-- [📝 Citation](#citation)
 
 ## ⚙️ Environment Setup 
 Ensure your environment meets the following requirements:

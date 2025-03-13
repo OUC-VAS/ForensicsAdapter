@@ -98,7 +98,7 @@ Make sure to modify the relevant configurations in the test.yaml file before tes
 To test the model, you can directly load our pre-trained weights and run a command like the following:
 
 ```bash
-python /data/cuixinjie/FA/test.py --weights_path /data/cuixinjie/weights/ckpt_best.pth
+python /data/cuixinjie/FA/test.py 
 ```
 ## 📝 Citation
 

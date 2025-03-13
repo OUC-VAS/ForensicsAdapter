@@ -82,6 +82,7 @@ We use multiple datasets for training and evaluation:
 Follow the official guidelines to download and preprocess the data.
 
 ## 🏋️ Training
+Make sure to modify the relevant configurations in the train.yaml file before training.
 
 Start training with the following command:
 
@@ -90,8 +91,9 @@ python train.py
 ```
 
 ## 🧪 Testing
+Make sure to modify the relevant configurations in the test.yaml file before testing.
 
-To test the model, you can directly load our pre-trained weights and run the following command:
+To test the model, you can directly load our pre-trained weights and run a command like the following:
 
 ```bash
 python /data/cuixinjie/FA/test.py --weights_path /data/cuixinjie/weights/ckpt_best.pth

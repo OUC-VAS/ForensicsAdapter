@@ -49,10 +49,10 @@
 
 ## 🚀 Start
 
-- [⚙️ Environment Setup](#environment-setup)
-- [📂 Dataset](#dataset)
-- [🏋️ Training](#training)
-- [🧪 Testing](#testing)
+ [⚙️ Environment Setup](#environment-setup)
+ [📂 Dataset](#dataset)
+ [🏋️ Training](#training)
+ [🧪 Testing](#testing)
 
 ## ⚙️ Environment Setup 
 Ensure your environment meets the following requirements:

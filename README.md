@@ -51,12 +51,12 @@
 
 - [⚙️ Environment Setup](#-environment-setup)
 - [📂 Dataset](#-dataset)
-- [🏋️ Training](#training)
-- [🧪 Testing](#testing)
-- [📝 Citation](#citation)
+- [🏋️ Training](#-training)
+- [🧪 Testing](#-testing)
+- [📝 Citation](#-citation)
 
 
-## ⚙️ Environment Setup 
+## ⚙️ Environment Setup
 Ensure your environment meets the following requirements:
 
 - 🐍 Python 3.7

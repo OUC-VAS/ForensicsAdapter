@@ -53,6 +53,7 @@
 - [📂 Dataset](#dataset)
 - [🏋️ Training](#training)
 - [🧪 Testing](#testing)
+- [📝 Citation](#citation)
 
 ## ⚙️ Environment Setup 
 Ensure your environment meets the following requirements:
@@ -97,5 +98,16 @@ To test the model, you can directly load our pre-trained weights and run a comma
 
 ```bash
 python /data/cuixinjie/FA/test.py --weights_path /data/cuixinjie/weights/ckpt_best.pth
+```
+## 📝 Citation
+
+```bash
+@article{cui2024forensics,
+  title={Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection},
+  author={Cui, Xinjie and Li, Yuezun and Luo, Ao and Zhou, Jiaran and Dong, Junyu},
+  journal={arXiv preprint arXiv:2411.19715},
+  year={2024}
+}
+
 ```
 

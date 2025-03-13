@@ -28,8 +28,7 @@ head_num: 16  # for  clip_model_name: "ViT-L/14"
 all_dataset: [FaceForensics++, FF-F2F, FF-DF, FF-FS, FF-NT, FaceShifter, DeepFakeDetection, Celeb-DF-v1, Celeb-DF-v2, DFDCP, DFDC, DeeperForensics-1.0, UADFV]
 train_dataset: [FaceForensics++]
 #test_dataset: [FaceForensics++]
-#test_dataset: [Celeb-DF-v1 ,Celeb-DF-v2, DFDCP, DFDC]
-test_dataset: [DFDC, DeepFakeDetection]
+test_dataset: [Celeb-DF-v1 ,Celeb-DF-v2, DFDCP, DFDC, DFD]
 
 #test_dataset: [FaceForensics++]
 

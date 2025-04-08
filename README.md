@@ -70,7 +70,7 @@
 ## ⏳ Environment Setup
 Ensure your environment meets the following requirements:
 
-- 🐍 Python 3.7
+- 🐍 Python 3.9
 - 🔥 PyTorch 1.11
 - 🚀 CUDA 11.3
 
@@ -79,7 +79,7 @@ Install dependencies:
 ```bash
 git clone https://github.com/OUC-VAS/ForensicsAdapter.git
 cd ForensicsAdapter
-conda create -n FA python=3.7.2
+conda create -n FA python=3.9
 conda activate FA
 sh install.sh
 ```

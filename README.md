@@ -94,8 +94,7 @@ We use multiple datasets for training and evaluation:
 - DFD
 - CD1/CD2
 
-The json files for the dataset can be processed following the method used in [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench)   .
-
+The dataset downloading and processing procedures can be referred to the implementation provided in [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench) .
 
 
 ## 🏋️ Training

@@ -13,7 +13,7 @@
 | **Section**       | **Content**                                                                 |
 |--------------------|-----------------------------------------------------------------------------|
 | 📄 **Paper**       | [arXiv Preprint](https://arxiv.org/abs/2411.19715)                       |
-| ⚖️ **Model Weights** | [Google Drive](https://drive.google.com/file/d/1UlaAUTtsX87ofIibf38TtfAKIsnA7WVm/view?usp=sharing)  \| [Baidu Netdisk](https://pan.baidu.com/s/1md8NI4MwtPVDWPji-XfkNg?pwd=inye) |
+| ⚖️ **Model Weights** | [Google Drive](https://drive.google.com/file/d/1UlaAUTtsX87ofIibf38TtfAKIsnA7WVm/view?usp=sharing)  \| [Baidu Netdisk](https://pan.baidu.com/s/10bEjEvhUlm4WVhDM1vWtig?pwd=9pbc) |
 
 ---
 

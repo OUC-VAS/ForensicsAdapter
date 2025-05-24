@@ -67,9 +67,10 @@ class ClipIntraBlock(nn.Module):
 
             real_index = (image_labels == 0).nonzero(as_tuple=True)[0]
             real_nums = len(real_index)
-            if real_nums != 0 :
+            fake_nums = len(fake_index)
+
+            if real_nums != 0 and fake_nums != 0 :
                 real_embeddings = embeddings[real_index]  # N r_L D
-                fake_nums = len(fake_index)
                 if fake_nums >= real_nums:
                     random_fake_index = torch.randperm(fake_nums)[:real_nums]
                     random_fake_embeddings = fake_embeddings[random_fake_index]

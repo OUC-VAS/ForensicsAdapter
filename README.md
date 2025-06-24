@@ -120,8 +120,11 @@ If our work is useful for your research, please cite it as follows:
 
 ```bibtex
 @InProceedings{Cui_2025_CVPR,
-  author={Cui, Xinjie and Li, Yuezun and Luo, Ao and Zhou, Jiaran and Dong, Junyu},
-  title={Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2025}
+    author    = {Cui, Xinjie and Li, Yuezun and Luo, Ao and Zhou, Jiaran and Dong, Junyu},
+    title     = {Forensics Adapter: Adapting CLIP for Generalizable Face Forgery Detection},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {19207-19217}
 }
+

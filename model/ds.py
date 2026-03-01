@@ -95,7 +95,27 @@ class DS(nn.Module):
         self.correct, self.total = 0, 0
         return {'acc': acc, 'auc': auc, 'eer': eer, 'ap': ap, 'pred': y_pred, 'label': y_true}
 
-    def forward(self, data_dict, inference=False):
+    def _build_sls_token_gradcam(self, vision_token, cls_logits, target_class=None, upsample_size=(224, 224)):
+        """Generate a Grad-CAM map from the final vision tokens guided by sls token classification logits."""
+        if target_class is None:
+            target_class = cls_logits.argmax(dim=1)
+        if isinstance(target_class, int):
+            target_class = torch.full((cls_logits.shape[0],), target_class, device=cls_logits.device, dtype=torch.long)
+        target_score = cls_logits.gather(1, target_class.unsqueeze(1)).sum()
+        gradients = torch.autograd.grad(target_score, vision_token, retain_graph=True, create_graph=False)[0]
+
+        weights = gradients.mean(dim=1, keepdim=True)  # N1D
+        cam = torch.relu((vision_token * weights).sum(dim=-1))  # NL
+        side = int(cam.shape[-1] ** 0.5)
+        cam = cam.view(cam.shape[0], 1, side, side)
+        cam = F.interpolate(cam, size=upsample_size, mode='bilinear', align_corners=False)
+
+        cam_min = cam.amin(dim=(2, 3), keepdim=True)
+        cam_max = cam.amax(dim=(2, 3), keepdim=True)
+        cam = (cam - cam_min) / (cam_max - cam_min + 1e-6)
+        return cam
+
+    def forward(self, data_dict, inference=False, return_gradcam=False, gradcam_target_class=None):
         images = data_dict['image']
         clip_images = F.interpolate(
             images,
@@ -109,7 +129,18 @@ class DS(nn.Module):
 
         attn_biases, xray_preds, loss_adapter_intra = self.adapter(data_dict, clip_features,
                                                                                 inference)
-        clip_output, loss_clip = self.rec_attn_clip(data_dict, clip_features, attn_biases[-1], inference, normalize=True)
+        if return_gradcam:
+            clip_output, loss_clip, attn_outputs = self.rec_attn_clip(
+                data_dict,
+                clip_features,
+                attn_biases[-1],
+                inference,
+                normalize=True,
+                return_aux=True,
+                enable_gradcam=True,
+            )
+        else:
+            clip_output, loss_clip = self.rec_attn_clip(data_dict, clip_features, attn_biases[-1], inference, normalize=True)
 
         data_dict['if_boundary'] = data_dict['if_boundary'].to(self.device)
         xray_preds = [self.masked_xray_post_process(xray_pred, data_dict['if_boundary']) for xray_pred in xray_preds]
@@ -130,6 +161,14 @@ class DS(nn.Module):
             'loss_intra': loss_adapter_intra,
             'loss_clip':loss_clip,
         }
+
+        if return_gradcam:
+            pred_dict['sls_token_gradcam'] = self._build_sls_token_gradcam(
+                attn_outputs['vision_token'],
+                outputs['clip_cls_output'],
+                target_class=gradcam_target_class,
+                upsample_size=(images.shape[-2], images.shape[-1]),
+            )
 
         if inference:
             self.prob.append(

@@ -139,7 +139,8 @@ class RecAttnClip(nn.Module):
                 param.requires_grad = False
 
 
-    def forward(self, data_dict, clip_features, attn_bias,inference=False, normalize=False):
+    def forward(self, data_dict, clip_features, attn_bias, inference=False, normalize=False,
+                return_aux=False, enable_gradcam=False):
         cls_token = clip_features[f'layer_{self.first_layer}_cls'].unsqueeze(1).permute(1, 0, 2).clone()  # ND->N1D->1ND
         vision_tokens = clip_features[self.first_layer].permute(1, 0, 2).clone()  # NLD->LND
         clss_token = cls_token.repeat(self.clss_nums, 1, 1)  # 1ND -> clss_nums, N,D
@@ -168,10 +169,15 @@ class RecAttnClip(nn.Module):
 
         x = x.permute(1, 0, 2)  # LND -> NLD
         clss_token = x[:, :self.clss_nums, :]
+        vision_token = x[:, self.clss_nums + 1:, :]
+        if enable_gradcam:
+            vision_token.retain_grad()
         clss_token = self.ln_post(clss_token)
         if self.proj is not None:
             clss_token = clss_token @ self.proj
         if normalize:
             clss_token = F.normalize(clss_token, dim=-1)
 
+        if return_aux:
+            return clss_token, loss_clip, {'vision_token': vision_token}
         return clss_token, loss_clip

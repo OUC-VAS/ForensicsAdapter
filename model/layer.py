@@ -73,7 +73,7 @@ class Fusion(nn.Module):
                 align_corners=False,
             ) #ND 14 14 => N D 16 16
         clip_x = self.proj(clip_x).view(n, self.adapter_dim, h * w).permute(0, 2, 1)
-        x = x + 0.1 * clip_x  # NLD
+        x = x + 0.01 * clip_x  # NLD
 
         return x
 

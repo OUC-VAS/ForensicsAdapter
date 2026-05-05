@@ -100,6 +100,9 @@ python train.py
 ## 🧪 Testing
 Make sure to modify the relevant configurations in the test.yaml file before testing.
 
+Start testing with the following command:
+
+
 ```bash
 python /data/cuixinjie/FA/test.py 
 ```

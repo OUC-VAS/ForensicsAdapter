@@ -100,8 +100,6 @@ python train.py
 ## 🧪 Testing
 Make sure to modify the relevant configurations in the test.yaml file before testing.
 
-To test the model, you can directly load our pre-trained weights and run a command like the following:
-
 ```bash
 python /data/cuixinjie/FA/test.py 
 ```

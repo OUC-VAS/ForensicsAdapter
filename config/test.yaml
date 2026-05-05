@@ -2,7 +2,6 @@
 log_dir: /data/cuixinjie/FA/logs/test
 #log_dir: /data/cuixinjie/DsClip_V2/log
 lmdb: False
-mode: text
 dry_run: false
 model_name: 'ds'
 inter: 'none'
@@ -39,8 +38,8 @@ test_dataset: [Celeb-DF-v1 ,Celeb-DF-v2, DFDCP, DFDC, DeepFakeDetection]
 dataset_json_folder: '/data/cuixinjie/dataset/dataset_json'
 
 compression: c23  # compression-level for videos
-train_batchSize: 20   # training batch size
-test_batchSize: 64   # test batch size
+train_batchSize: 16   # training batch size
+test_batchSize: 256   # test batch size
 workers: 8   # number of data loading workers
 frame_num: {'train': 32, 'test': 32}   # number of frames to use per video in training and testing
 resolution: 256   # resolution of output image to network

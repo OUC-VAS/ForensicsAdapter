@@ -85,6 +85,8 @@ We use multiple datasets for training and evaluation:
 - DFD
 - CD1/CD2
 
+The dataset downloading and processing procedures can be referred to the implementation provided in [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench) .
+
 
 ## 🏋️ Training
 Make sure to modify the relevant configurations in the train.yaml file before training.

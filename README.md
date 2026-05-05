@@ -7,15 +7,6 @@
 ![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/archi.png)
 
 
----
-
-## 📚 Resources  
-| **Section**       | **Content**                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| 📄 **Paper**       | [arXiv Preprint](https://arxiv.org/abs/2411.19715)                       |
-| ⚖️ **Model Weights** | [Google Drive](https://drive.google.com/file/d/1UlaAUTtsX87ofIibf38TtfAKIsnA7WVm/view?usp=sharing)  \| [Baidu Netdisk](https://pan.baidu.com/s/10bEjEvhUlm4WVhDM1vWtig?pwd=9pbc) |
-
----
 
 
 ## 📊 Benchmark Comparison  
@@ -93,8 +84,6 @@ We use multiple datasets for training and evaluation:
 - DFDCP
 - DFD
 - CD1/CD2
-
-The dataset downloading and processing procedures can be referred to the implementation provided in [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench) .
 
 
 ## 🏋️ Training

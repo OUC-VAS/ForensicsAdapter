@@ -6,7 +6,7 @@
 
 ![Pipeline of the proposed Forensics Adapter. ](https://github.com/OUC-VAS/ForensicsAdapter/blob/main/figures/archi.png)
 
-
+We’ve made some updates to the code, and we’ll release the new model weights soon. Please stay tuned.
 
 
 ## 📊 Benchmark Comparison  

@@ -127,3 +127,9 @@ If our work is useful for your research, please cite it as follows:
     pages     = {19207-19217}
 }
 
+## License
+This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+This repository is intended for academic research use only. Commercial use is prohibited.
+Please refer to the LICENSE file for more details.
+
+
